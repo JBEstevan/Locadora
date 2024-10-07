@@ -31,7 +31,7 @@ const userSchema = new db.Schema({
         default: "USU",
     },
     phones: {
-        type: Number,
+        type: [String],
     },
     cep: {
         type: Object,

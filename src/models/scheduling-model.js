@@ -9,6 +9,16 @@ const schedulingSchema = new db.Schema({
         type: String,
         required: true,
     },
+    rented_by: {
+        type: db.Schema.Types.ObjectId,
+        ref: 'User',
+        required: true,
+    },
+    rent_date_id: {
+        type: db.Schema.Types.ObjectId,
+        ref: 'Movie',
+        required: true,
+    },
     user_id: {
         type: db.Schema.Types.ObjectId,
         ref: 'User',
